@@ -45,6 +45,13 @@
         }
         if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
+          const replacedText = text.replace(/POUK/gi, 'PUKE');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
           const replacedText = text.replace(/FIORKEF/gi, 'FIREFOX');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
