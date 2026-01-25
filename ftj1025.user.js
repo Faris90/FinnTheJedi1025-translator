@@ -120,6 +120,20 @@
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/DALUTI/gi, 'DELETE');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+          if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/SPOMPANG/gi, 'TAMPON');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
       }
     }
   };
