@@ -101,7 +101,7 @@
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/DELETE/gi, 'DELETE');
+          const replacedText = text.replace(/FANK/gi, 'DONUT');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
