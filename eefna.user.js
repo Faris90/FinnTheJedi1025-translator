@@ -15,7 +15,13 @@
       const element = elements[i];
       for (let j = 0; j < element.childNodes.length; j++) {
         const node = element.childNodes[j];
-
+ if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/BIUBIES/gi, 'BOOBIES');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
         if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/biubies/gi, 'boobies');
@@ -68,13 +74,6 @@
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/NAKPI/gi, 'NAPKIN');
-          if (replacedText !== text) {
-            element.replaceChild(document.createTextNode(replacedText), node);
-          }
-        }
-          if (node.nodeType === 3) { // Text node
-          const text = node.nodeValue;
-          const replacedText = text.replace(/BLORKA/gi, 'BLOW ME');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
