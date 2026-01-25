@@ -128,6 +128,4 @@
     subtree: true,
     characterData: true
   });
-
-  replaceImageURL(); // Replace image URL on 4cuck.org
 })();
