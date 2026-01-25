@@ -106,6 +106,13 @@
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/OPSTIT/gi, "OP's TITS");
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/AMNACREPE/gi, "I'M A CREEP");
