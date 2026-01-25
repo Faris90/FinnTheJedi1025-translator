@@ -1,8 +1,7 @@
 // ==UserScript==
 // @name finnthejedi1025 translator
-// @namespace http://soyjak.party
 // @version 1.0
-// @description Replaces the word "4chan" with "4cuck" on web pages
+// @description Helps you understand our little buddy better
 // @match *://*/*
 // @grant none
 // ==/UserScript==
@@ -19,7 +18,7 @@
 
         if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/4chan/gi, '4cuck');
+          const replacedText = text.replace(/biubies/gi, 'boobies');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
@@ -34,6 +33,13 @@
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/DANECTAITED/gi, 'DECAPITATED');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/FIORKEF/gi, 'FIREFOX');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
@@ -103,14 +109,7 @@
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/TAMPON/gi, 'TAMPON');
-          if (replacedText !== text) {
-            element.replaceChild(document.createTextNode(replacedText), node);
-          }
-        }
-          if (node.nodeType === 3) { // Text node
-          const text = node.nodeValue;
-          const replacedText = text.replace(/I'M A CREEP/gi, "I'M A CREEP");
+          const replacedText = text.replace(/AMNACREPE/gi, "I'M A CREEP");
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
@@ -119,19 +118,7 @@
     }
   };
 
-  const replaceImageURL = () => {
-    if (window.location.hostname === '4cuck.org') {
-      var images = document.getElementsByTagName('img');
-      for (var i = 0; i < images.length; i++) {
-        var img = images[i];
-        var originalSrc = img.getAttribute('src');
-        if (originalSrc && originalSrc.indexOf('//s.4cdn.org/image/fp/logo-transparent.png') !== -1) {
-          var newSrc = originalSrc.replace('//s.4cdn.org/image/fp/logo-transparent.png', 'https://files.catbox.moe/ril2hr.png');
-          img.setAttribute('src', newSrc);
-        }
-      }
-    }
-  };
+
 
  setTimeout(function(){ findAndReplace();},100); // Initial replacement
 
