@@ -31,7 +31,7 @@
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/EEFNA/gi, 'FUCK NAH');
+          const replacedText = text.replace(/FUCK NAH/gi, 'FUCK NAH');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
