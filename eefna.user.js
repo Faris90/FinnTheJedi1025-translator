@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name finnthejedi1025 translator
 // @version 1.0
-// @description Replaces the word "4cuck" with "4cuck" on web pages
+// @description Get to understand FinnTheJedi1025 a little better :)
 // @match *://*/*
 // @grant none
 // ==/UserScript==
@@ -18,14 +18,14 @@
 
         if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/4cuck/gi, '4cuck');
+          const replacedText = text.replace(/OPSIC/gi, 'OP IS SICK');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/FUCK NAH/gi, 'FUCK NAH');
+          const replacedText = text.replace(/EENFA/gi, 'FUCK NAH');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
