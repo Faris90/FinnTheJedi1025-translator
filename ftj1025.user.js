@@ -2,7 +2,7 @@
 // @name finnthejedi1025 translator
 // @version 1.0
 // @description Helps you understand our little buddy better
-// @match *://*/*
+// @match *://*.deviantart.com/*
 // @grant none
 // ==/UserScript==
 
