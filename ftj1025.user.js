@@ -73,6 +73,27 @@
         }
          if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
+          const replacedText = text.replace(/THLART-HARSE/gi, 'FARTING HORSE');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+         if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/NEH/gi, 'NO');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/NOP-NOP/gi, 'HONK-HONK');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+         if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
           const replacedText = text.replace(/ENEH/gi, '[Inaudible Sperging]');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
@@ -116,6 +137,20 @@
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/BLORKA/gi, 'BLOW ME');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/NAGH/gi, 'MOAN');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/PENGSHIT/gi, 'PENGUIN SHIT');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
