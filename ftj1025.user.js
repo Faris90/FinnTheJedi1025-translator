@@ -64,6 +64,20 @@
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
+         if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/EH-NEH/gi, '[Inaudible Sperging]');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+         if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/ENEH/gi, '[Inaudible Sperging]');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/NAGGI/gi, 'NIGGA');
@@ -74,6 +88,13 @@
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/APINA/gi, 'A PENIS');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+         if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/DAO-DAO/gi, 'DADDY');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
