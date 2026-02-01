@@ -178,6 +178,20 @@
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
+          const replacedText = text.replace(/GAWEH/gi, "COWARD");
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+          if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/TUROL/gi, "TROLL");
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
+          if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
           const replacedText = text.replace(/AMNACREPE/gi, "I'M A CREEP");
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
