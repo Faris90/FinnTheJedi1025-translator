@@ -178,14 +178,14 @@
         }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/AMNACREPE/gi, "I'M A CREEP");
+          const replacedText = text.replace(/AMANACREPE/gi, "I'M A CREEP");
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
         if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
-          const replacedText = text.replace(/AMNAPEFO/gi, "I'M A PEDO");
+          const replacedText = text.replace(/AMANAPEFO/gi, "I'M A PEDO");
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
