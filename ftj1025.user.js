@@ -106,6 +106,13 @@
             element.replaceChild(document.createTextNode(replacedText), node);
           }
         }
+        if (node.nodeType === 3) { // Text node
+          const text = node.nodeValue;
+          const replacedText = text.replace(/FAGGI/gi, 'FAGGOT');
+          if (replacedText !== text) {
+            element.replaceChild(document.createTextNode(replacedText), node);
+          }
+        }
           if (node.nodeType === 3) { // Text node
           const text = node.nodeValue;
           const replacedText = text.replace(/APINA/gi, 'A PENIS');
